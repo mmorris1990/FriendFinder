@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Font Awesome link-->
+    <script src="https://kit.fontawesome.com/4dfc219d3e.js"></script>
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Friend Finder Survey</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <span style="font-size: 2em; color:crimson;">
+                <i class="fas fa-grin-hearts"></i>
+            </span>
+            Friend Finder Survey
+        </h1>
+        <hr>
+        <h2>Who are You?</h2>
+        <br>
+
+        <form>
+            <div class="form-row">
+                <div class="col">
+                    <label for="name">
+                        <h4>Name (required)</h4>
+                    </label>
+                    <input type="text" class="form-control" id="name" placeholder="Suzy Sweetheart" required>
+                </div>
+                <div class="col">
+                    <label for="age">
+                        <h4>Age</h4>
+                    </label>
+                    <input type="text" class="form-control" id="age" placeholder="21">
+                </div>
+            </div>
+        </form>
+        <hr>
+
+        <h2><strong>Question 1</strong></h2>
+        <h4>You see yourself as an open-minded person</h4>
+        <input type="range" class="custom-range" min="0" max="5" id="q1range" onchange="updateTextInput(this.value);">
+        <input type="text" id="textInput" >
+
+    </div>
+
+    <!--jQuery link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        function updateTextInput(val) {
+          document.getElementById('textInput').value=val; 
+        };
+    </script>
+</body>
+
+</html>
