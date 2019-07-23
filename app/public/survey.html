@@ -15,6 +15,7 @@
 
 <body>
     <div class="container">
+       <!-- Header -->
         <h1>
             <span style="font-size: 2em; color:crimson;">
                 <i class="fas fa-grin-hearts"></i>
@@ -22,9 +23,10 @@
             Friend Finder Survey
         </h1>
         <hr>
+
+        <!-- Initial info -->
         <h2>Who are You?</h2>
         <br>
-
         <form>
             <div class="form-row">
                 <div class="col">
@@ -43,21 +45,191 @@
         </form>
         <hr>
 
+        <!-- Survey Questions -->
         <h2><strong>Question 1</strong></h2>
-        <h4>You see yourself as an open-minded person</h4>
-        <input type="range" class="custom-range" min="0" max="5" id="q1range" onchange="updateTextInput(this.value);">
-        <input type="text" id="textInput" >
+        <label for="q1">
+            <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+        </label>
+        <div class="row">
+            <div class="col col-4">
+                <select class="form-control" id="q1">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
 
+        <h2><strong>Question 2</strong></h2>
+        <label for="q2">
+            <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+        </label>
+        <div class="row">
+            <div class="col col-4">
+                <select class="form-control" id="q2">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <h2><strong>Question 3</strong></h2>
+        <label for="q3">
+            <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+        </label>
+        <div class="row">
+            <div class="col col-4">
+                <select class="form-control" id="q3">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <h2><strong>Question 4</strong></h2>
+        <label for="q4">
+            <h4>You rarely do something just out of sheer curiosity.</h4>
+        </label>
+        <div class="row">
+            <div class="col col-4">
+                <select class="form-control" id="q4">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <h2><strong>Question 5</strong></h2>
+        <label for="q5">
+            <h4>People rarely upset you.</h4>
+        </label>
+        <div class="row">
+            <div class="col col-4">
+                <select class="form-control" id="q5">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <h2><strong>Question 6</strong></h2>
+        <label for="q6">
+            <h4>It is often difficult for you to relate to other people's feelings.</h4>
+        </label>
+        <div class="row">
+            <div class="col col-4">
+                <select class="form-control" id="q6">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <h2><strong>Question 7</strong></h2>
+        <label for="q7">
+            <h4>In a discussion, thruth should be more important than people's sensitivities.</h4>
+        </label>
+        <div class="row">
+            <div class="col col-4">
+                <select class="form-control" id="q7">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <h2><strong>Question 8</strong></h2>
+        <label for="q8">
+            <h4>You rarely get carried away by fantasies and ideas.</h4>
+        </label>
+        <div class="row">
+            <div class="col col-4">
+                <select class="form-control" id="q8">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <h2><strong>Question 9</strong></h2>
+        <label for="q9">
+            <h4>You think that everyone's views should be respected regardless of whether they are supported by facts or not.</h4>
+        </label>
+        <div class="row">
+            <div class="col col-4">
+                <select class="form-control" id="q9">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <h2><strong>Question 10</strong></h2>
+        <label for="q10">
+            <h4>You fell more energetic after spending time with a group of people.</h4>
+        </label>
+        <div class="row">
+            <div class="col col-4">
+                <select class="form-control" id="q10">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <hr>
+        
     </div>
 
     <!--jQuery link-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script>
-        function updateTextInput(val) {
-          document.getElementById('textInput').value=val; 
-        };
-    </script>
 </body>
 
 </html>
