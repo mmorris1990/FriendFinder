@@ -10,8 +10,8 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 // Require the two routing .js files
-require("./routing/apiRoutes")(app);
-require("./routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
 
 // Start the server!
 app.listen(PORT, function() {
